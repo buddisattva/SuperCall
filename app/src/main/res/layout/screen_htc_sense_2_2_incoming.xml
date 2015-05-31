@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layScreen" android:background="@drawable/incall_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgBackground" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/layHeader" android:background="@drawable/incall_header_bg" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/txtIncomingCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/incall_incoming_call" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layContactInformations" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_above="@id/layWidgets">
+        <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtContactName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Contact name" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/txtContactPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Phone number" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top|center" android:id="@id/layWidgets" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_above="@id/layButtons">
+        <ImageButton android:id="@id/btnMute" android:background="@drawable/btn_incall_widgets_bg" android:padding="5.0dip" android:layout_width="80.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_speaker" android:scaleType="fitCenter" android:layout_toLeftOf="@id/btnSpeaker" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btnSpeaker" android:background="@drawable/btn_incall_widgets_bg" android:padding="10.0dip" android:layout_width="80.0dip" android:layout_height="60.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/ic_volume" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layButtons" android:background="@drawable/screen_htc_sense_button_bg" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="25.0dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/btnAccept" android:background="@drawable/btn_incall_yes" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="7.0dip" android:text="@string/incall_answer" android:layout_weight="1.0" />
+        <Button android:textSize="25.0dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/btnDecline" android:background="@drawable/btn_incall_no" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="7.0dip" android:text="@string/incall_decline" android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/imgAndroid"
+        android:layout_width="300.0dip"
+        android:layout_height="400.0dip"
+        android:layout_below="@id/layHeader"
+        android:layout_above="@id/layContactInformations"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/in_call_bg" />
+
+</RelativeLayout>

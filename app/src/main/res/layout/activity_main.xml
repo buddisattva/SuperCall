@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@drawable/black" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editName"
+        android:layout_alignParentRight="true"
+        android:text="@string/Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@drawable/black" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editName"
+        android:ems="10"
+        android:inputType="phone" 
+        android:textColor="@drawable/black" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editPhone"
+        android:layout_alignParentRight="true"
+        android:text="@string/PhoneNumber"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@drawable/black" />
+
+    <Button
+        android:id="@+id/btnRingtonePick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPhone"
+        android:text="@string/btnRingtonePick" />
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnRingtonePick"
+        android:text="@string/btnContact" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/btnSend" />
+
+    <ImageView
+        android1:id="@+id/imageContact"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/btnRingtonePick"
+        android1:src="@drawable/in_call_bg" />
+ 
+    <Button
+        android1:id="@+id/btnPhoto"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/btnRingtonePick"
+        android1:layout_alignBottom="@+id/btnRingtonePick"
+        android1:layout_toRightOf="@+id/btnRingtonePick"
+        android1:text="@string/btnPhoto" />
+
+    <Button
+        android1:id="@+id/btnSet"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/btnSend"
+        android1:text="@string/btnSet" />
+   
+</RelativeLayout>
